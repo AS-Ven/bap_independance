@@ -1,8 +1,15 @@
+import Footer from "@/components/footer/footer";
+import Header from "@/components/header/header";
+
 const Home = () => {
   return (
-    <main>
-      Home page
-    </main>
+    <>
+      <Header></Header>
+      <main>
+        Home page
+      </main>
+      <Footer color="red"></Footer>
+    </>
   );
 }
  

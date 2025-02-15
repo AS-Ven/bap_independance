@@ -6,7 +6,7 @@ interface ColorBtnProps {
     color: color
 }
 
-type color = "orange" | "red" | "green" | "blue"
+export type color = "orange" | "red" | "green" | "blue"
 
 const ColorBtn = ({ text, url, color }: ColorBtnProps) => {
     return (
@@ -19,7 +19,7 @@ const ColorBtn = ({ text, url, color }: ColorBtnProps) => {
                     color == "green" ? "bg-green-500" :
                     "bg-blue-300"
                 }
-                text-white p-6 text-2xl rounded-2xl
+                text-white p-6 px-8 text-2xl rounded-2xl
             `}
         >
             <button>{text}</button>
