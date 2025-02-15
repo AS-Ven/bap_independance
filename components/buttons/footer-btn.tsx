@@ -1,17 +1,15 @@
 import Link from "next/link";
 
-interface ColorBtnProps {
-    text: string
-    url: string
+interface FooterBtnProps {
     color: color
 }
 
 export type color = "orange" | "red" | "green" | "blue"
 
-const ColorBtn = ({ text, url, color }: ColorBtnProps) => {
+const FooterBtn = ({ color }: FooterBtnProps) => {
     return (
         <Link
-            href={url}
+            href="/"
             className={`
                 ${
                     color == "orange" ? "bg-orange-500" :
@@ -19,12 +17,12 @@ const ColorBtn = ({ text, url, color }: ColorBtnProps) => {
                     color == "green" ? "bg-green-500" :
                     "bg-blue-300"
                 }
-                text-white p-6 px-8 text-2xl rounded-2xl
+                text-white text-3xl py-5 px-8 rounded-2xl
             `}
         >
-            <button>{text}</button>
+            Contactez-nous
         </Link>
     );
 }
  
-export default ColorBtn;
+export default FooterBtn;
