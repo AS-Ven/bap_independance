@@ -26,8 +26,8 @@ const BurgerLink = ({ title, urls }: BurgerLinkProps) => {
             >
                 {
                     urls.map((props, index) =>
-                        <li>
-                            <Link href={props.url} key={index}>
+                        <li key={index}>
+                            <Link href={props.url}>
                                 <h3>
                                     {props.text}
                                 </h3>
