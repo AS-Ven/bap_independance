@@ -1,4 +1,5 @@
-import FooterBtn, { color } from "../buttons/footer-btn";
+import { color } from "@/utils/type";
+import FooterBtn from "../buttons/footer-btn";
 import localFont from 'next/font/local'
  
 const fontOlivier = localFont({ src: '../../assets/fonts/olivier_demo.ttf' })
