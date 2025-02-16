@@ -20,9 +20,6 @@ const Header = () => {
         }
     ]
 
-    console.log(pagesUrls);
-    
-
     return (
         <header className="flex justify-evenly items-center py-6">
             <Image
