@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { useState } from "react"
+
 interface BurgerLinkProps {
     title: string
     urls: urls[]
