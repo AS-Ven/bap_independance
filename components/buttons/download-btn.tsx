@@ -1,10 +1,9 @@
+import { color } from "@/utils/type";
 import Link from "next/link";
 
 interface DownloadBtnProps {
     color: color
 }
-
-export type color = "orange" | "red" | "green" | "blue"
 
 const DownloadBtn = ({ color }: DownloadBtnProps) => {
     return (

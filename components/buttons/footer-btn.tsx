@@ -1,10 +1,9 @@
+import { color } from "@/utils/type";
 import Link from "next/link";
 
 interface FooterBtnProps {
     color: color
 }
-
-export type color = "orange" | "red" | "green" | "blue"
 
 const FooterBtn = ({ color }: FooterBtnProps) => {
     return (
