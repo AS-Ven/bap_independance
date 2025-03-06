@@ -7,9 +7,8 @@ interface FooterBtnProps {
 
 const FooterBtn = ({ color }: FooterBtnProps) => {
     return (
-        <Link
-            href="/"
-            className={`
+        <Link href="/">
+            <button className={`
                 ${
                     color == "orange" ? "bg-orange-500" :
                     color == "red" ? "bg-rose-900" :
@@ -17,9 +16,9 @@ const FooterBtn = ({ color }: FooterBtnProps) => {
                     "bg-blue-300"
                 }
                 text-white text-3xl py-5 px-8 rounded-2xl
-            `}
-        >
-            Contactez-nous
+            `}>
+                Contactez-nous
+            </button>
         </Link>
     );
 }

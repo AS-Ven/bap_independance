@@ -11,13 +11,15 @@ interface FooterProps {
 const Footer = ({color}: FooterProps) => {
     return (
         <footer className="flex justify-end">
-            <div className="w-2/3 px-9 flex flex-col justify-center items-center">
-                <h2 className={`${fontOlivier.className} text-8xl py-12`}>N'hésitez pas à nous contacter pour avoir plus d'information !</h2>
-                <p className="text-2xl">Pour plus d'informations ou pour participer aux activités, il est recommandé de contacter directement la Maison des Part'Âges au 01 46 01 51 74.</p>
-                <div className="p-28">
+            <div className="w-2/3 flex items-start flex-col">
+                <div className="flex flex-col justify-center items-center">
+                    <h2 className={`${fontOlivier.className} text-7xl py-12`}>N&apos;hésitez pas à nous contacter pour avoir plus d&apos;information !</h2>
+                    <p className="text-2xl font-bold text-gray-500">Pour plus d&apos;informations ou pour participer aux activités, il est recommandé de contacter directement la Maison des Part&apos;Âges au 01 46 01 51 74.</p>
+                </div>
+                <div className="py-28">
                     <FooterBtn
                         color={color}
-                    ></FooterBtn>
+                        ></FooterBtn>
                 </div>
             </div>
         </footer>

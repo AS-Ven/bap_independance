@@ -34,7 +34,10 @@ const Header = () => {
                 title="Pages"
                 urls={pagesUrls}
             ></BurgerLink>
-            <h2 className="text-3xl">Contact</h2>
+            <PageLink
+                url="/"
+                text="Contact"
+            ></PageLink>
         </header>
     );
 }

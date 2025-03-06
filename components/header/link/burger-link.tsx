@@ -20,7 +20,7 @@ const BurgerLink = ({ title, urls }: BurgerLinkProps) => {
     return (
         <div>
             <div className="flex gap-2">
-                <button onClick={() => SetDisplay(!display)} className="text-3xl">{title}</button>
+                <button onClick={() => SetDisplay(!display)} className="text-xl">{title}</button>
             </div>
             <ul
                 className={`${display ? "flex" : "hidden"} flex-col absolute m-2`}

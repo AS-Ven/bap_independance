@@ -37,10 +37,10 @@ const AboutUs = () => {
     return (
         <div>
             <div className="flex flex-col justify-center items-center gap-24 pt-24">
-                <h2 className={`${fontOlivier.className} text-rose-900 text-8xl`}>Qui sommes-nous ?</h2>
-                <p className="text-4xl text-neutral-600 w-2/3">La Maison des Part'Âges Louis-Girerd, centre social du Plessis-Robinson, offre des services et activités pour tous, renforçant le lien social.</p>
+                <h2 className={`${fontOlivier.className} text-rose-900 text-7xl`}>Qui sommes-nous ?</h2>
+                <p className='text-3xl font-bold text-neutral-500 text-center  w-2/3'>La Maison des Part&apos;Âges Louis-Girerd, centre social du Plessis-Robinson, offre des services et activités pour tous, renforçant le lien social.</p>
             </div>
-            <div className="flex flex-wrap justify-center items-center py-24 gap-y-20">
+            <div className="flex flex-wrap justify-center items-center py-24 gap-x-40 gap-y-20">
                 {
                     aboutUs_list.map((element, index) => (
                         <ColoredCards

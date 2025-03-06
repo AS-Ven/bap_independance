@@ -19,7 +19,7 @@ const RowMenuCards = ({ color, text }: RowMenuCardsProps) => {
             color == "purple" ? "border-violet-600" :
             "border-blue-300"
             }
-            border-8 rounded-tr-[190] rounded-bl-[190] flex justify-around flex-col bg-white`
+            border-8 rounded-tr-[150] rounded-bl-[150] w-1/4 flex justify-around items-center flex-col bg-white`
         }>
             <div className="h-96"></div>
             <h3 className={` ${fontLilitaOne.className}
@@ -30,7 +30,7 @@ const RowMenuCards = ({ color, text }: RowMenuCardsProps) => {
                 color == "purple" ? "bg-violet-600" :
                 "bg-blue-300"
                 }
-                text-white text-4xl mx-32 my-20 w-72 text-center p-2 rounded-2xl`
+                text-white text-3xl mx-32 my-20 w-72 text-center p-2 rounded-2xl`
             }>{text}</h3>
         </div>
     );

@@ -16,7 +16,7 @@ const DownloadBtn = ({ color }: DownloadBtnProps) => {
                     color == "green" ? "bg-green-500" :
                     "bg-blue-300"
                 }
-                text-white text-3xl py-3 px-8 rounded-2xl
+                text-white text-2xl py-3 px-8 rounded-2xl
             `}
         >
             Téléchargez le guide gratuit

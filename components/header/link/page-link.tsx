@@ -8,7 +8,7 @@ interface PageLinkProps {
 const PageLink = ({ url, text }: PageLinkProps) => {
     return (
         <Link href={url}>
-            <h2 className="text-3xl">{text}</h2>
+            <h2 className="text-xl">{text}</h2>
         </Link>
     );
 }

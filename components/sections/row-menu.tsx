@@ -26,7 +26,7 @@ const RowMenu = ({ color }: RowMenuProps) => {
     ]
     return (
         <div className="flex flex-col justify-center items-center py-24">
-            <h2 className={`${fontOlivier.className} text-8xl w-2/3 text-center`}>
+            <h2 className={`${fontOlivier.className} text-7xl w-2/3 px-10 text-center`}>
                     Accompagner votre
                     <span className={`
                         ${
