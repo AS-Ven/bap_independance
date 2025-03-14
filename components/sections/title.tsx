@@ -10,7 +10,7 @@ interface TitleProps {
     color: color
 }
 
-const Title = ({ title, description }: TitleProps) => {
+const Title = ({ title, description, color }: TitleProps) => {
     return (
         <div className="bg-orange-100">
             <div className="py-20 px-12 gap-10 flex flex-col ">
@@ -18,7 +18,7 @@ const Title = ({ title, description }: TitleProps) => {
                 <h1 className={`${fontOlivier.className} text-7xl w-2/3`}>{title}</h1>
                 <div className="w-1/2 flex flex-col items-center gap-20">
                     <p className="text-xl">{description}</p>
-                    <DownloadBtn color="red"></DownloadBtn>
+                    <DownloadBtn color={color}></DownloadBtn>
                 </div>
             </div>
         </div>
