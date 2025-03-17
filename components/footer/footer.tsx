@@ -19,7 +19,7 @@ const Footer = ({color}: FooterProps) => {
                 <div className="py-28">
                     <FooterBtn
                         color={color}
-                        ></FooterBtn>
+                    ></FooterBtn>
                 </div>
             </div>
         </footer>

@@ -35,7 +35,7 @@ const Header = () => {
                 urls={pagesUrls}
             ></BurgerLink>
             <PageLink
-                url="/"
+                url="/contact"
                 text="Contact"
             ></PageLink>
         </header>

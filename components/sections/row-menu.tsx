@@ -46,7 +46,7 @@ const RowMenu = ({ color }: RowMenuProps) => {
                     color == "purple" ? "bg-violet-600" :
                     "bg-blue-300"
                 }
-                py-24 mt-24 flex flex-wrap justify-around w-screen`
+                py-24 mt-24 flex flex-wrap justify-around`
             }>
                 {
                     RowMenuList.map((section, index) =>
