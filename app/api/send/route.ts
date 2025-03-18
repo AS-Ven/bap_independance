@@ -3,25 +3,18 @@
 import { EmailTemplate } from '@/components/sections/contact/template';
 import { Resend } from 'resend';
 
-const key = process.env.RESEND_KEY;
-console.log(key);
-const resend = new Resend(key);
+const resend = new Resend(process.env.RESEND_KEY);
 
-export async function sendMail() {
-  try {
-    const { data, error } = await resend.emails.send({
+export async function sendMail(form: FormData) {
+
+    const name = form.get('name')?.toString()
+    const email = form.get('email')?.toString()
+    const message = form.get('message')?.toString()
+    
+    await resend.emails.send({
       from: 'Acme <onboarding@resend.dev>',
       to: ['aldric.vendas@gmail.com'],
-      subject: 'Hello world',
-      react: await EmailTemplate({ firstName: 'John' }),
+      subject: 'Contacte automatique',
+      react: EmailTemplate({ name: name!, email: email!, message: message! }),
     });
-
-    if (error) {
-      return Response.json({ error }, { status: 500 });
-    }
-
-    return Response.json(data);
-  } catch (error) {
-    return Response.json({ error }, { status: 500 });
-  }
 }
