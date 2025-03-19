@@ -3,6 +3,7 @@ import Footer from "@/components/footer/footer";
 import Header from "@/components/header/header";
 import RowMenu from "@/components/sections/row-menu";
 import Title from "@/components/sections/title";
+import book from "@/assets/book.png"
 
 const Education = () => {
 
@@ -71,6 +72,7 @@ const Education = () => {
           title="Aidez votre enfant à réussir à l'école !"
           description="L’apprentissage est un parcours unique pour chaque enfant. Pour l’aider à progresser sereinement, il est essentiel de l’accompagner avec des méthodes adaptées. Découvrez des conseils pratiques pour améliorer sa motivation, son organisation et ses méthodes d’apprentissage."
           color="blue"
+          image={book}
         ></Title>
         <div className="flex flex-col justify-around items-start gap-8 my-8 bg-blue-300">
             {

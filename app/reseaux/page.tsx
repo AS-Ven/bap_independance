@@ -3,6 +3,7 @@ import Footer from "@/components/footer/footer";
 import Header from "@/components/header/header";
 import RowMenu from "@/components/sections/row-menu";
 import Title from "@/components/sections/title";
+import phone from "@/assets/phone.png"
 
 const Reaseau = () => {
 
@@ -71,6 +72,7 @@ const Reaseau = () => {
           title="Protégez vos enfants des dangers des réseaux sociaux"
           description="Les réseaux sociaux font partie du quotidien des enfants et des adolescents, mais ils présentent aussi des risques. En tant que parent, il est essentiel de les accompagner pour une utilisation responsable et sécurisée."
           color="orange"
+          image={phone}
         ></Title>
         <div className="flex flex-col justify-around items-start gap-8 my-8 bg-orange-500">
             {

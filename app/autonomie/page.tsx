@@ -3,6 +3,7 @@ import Footer from "@/components/footer/footer";
 import Header from "@/components/header/header";
 import RowMenu from "@/components/sections/row-menu";
 import Title from "@/components/sections/title";
+import cog from "@/assets/cog.png"
 
 const Autonomie = () => {
 
@@ -53,6 +54,7 @@ const Autonomie = () => {
           title="Développer l’autonomie de votre enfant!"
           description="L’autonomie est essentielle pour que votre enfant grandisse en confiance et devienne responsable. En l’accompagnant progressivement, vous l’aidez à prendre des décisions, gérer ses émotions et affronter les défis du quotidien."
           color="purple"
+          image={cog}
         ></Title>
         <div className="flex flex-col justify-around items-start gap-8 my-8 bg-purple-500">
             {
