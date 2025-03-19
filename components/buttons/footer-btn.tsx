@@ -12,7 +12,7 @@ const FooterBtn = ({ color }: FooterBtnProps) => {
                 ${
                     color == "orange" ? "bg-orange-500" :
                     color == "red" ? "bg-rose-900" :
-                    color == "green" ? "bg-green-500" :
+                    color == "purple" ? "bg-purple-500" :
                     "bg-blue-300"
                 }
                 text-white text-3xl py-5 px-8 rounded-2xl

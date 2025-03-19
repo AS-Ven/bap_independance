@@ -7,16 +7,16 @@ const Header = () => {
 
     const pagesUrls = [
         {
-            url:  "/",
-            text: "Page 1"
+            url:  "/reseaux",
+            text: "Réseaux Sociaux"
         },
         {
-            url:  "/",
-            text: "Page 2"
+            url:  "/education",
+            text: "Education"
         },
         {
-            url:  "/",
-            text: "Page 3"
+            url:  "/autonomie",
+            text: "Autonomie"
         }
     ]
 

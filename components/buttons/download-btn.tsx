@@ -13,7 +13,7 @@ const DownloadBtn = ({ color }: DownloadBtnProps) => {
                 ${
                     color == "orange" ? "bg-orange-500" :
                     color == "red" ? "bg-rose-900" :
-                    color == "green" ? "bg-green-500" :
+                    color == "purple" ? "bg-purple-500" :
                     "bg-blue-300"
                 }
                 text-white text-2xl py-3 px-8 rounded-2xl
