@@ -26,7 +26,7 @@ const RowMenu = ({ color }: RowMenuProps) => {
     ]
     return (
         <div className="flex flex-col justify-center items-center py-24">
-            <h2 className={`${fontOlivier.className} text-7xl w-2/3 px-10 text-center`}>
+            <h2 className={`${fontOlivier.className} md:text-7xl text-5xl md:w-2/3 md:px-10 text-center`}>
                     Accompagner votre
                     <span className={`
                         ${
@@ -46,7 +46,7 @@ const RowMenu = ({ color }: RowMenuProps) => {
                     color == "purple" ? "bg-violet-600" :
                     "bg-blue-300"
                 }
-                py-24 mt-24 flex flex-wrap justify-around`
+                py-24 mt-24 flex flex-wrap gap-16 justify-center md:justify-around`
             }>
                 {
                     RowMenuList.map((section, index) =>

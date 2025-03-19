@@ -25,6 +25,7 @@ const Header = () => {
             <Image
                 src={Logo}
                 alt="logo"
+                className="hidden md:flex"
             />
             <PageLink
                 url="/"

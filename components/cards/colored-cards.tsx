@@ -16,7 +16,7 @@ const ColoredCards = ({ title, description, color }: ColoredCardsProps) => {
                     color == "purple" ? "border-violet-600" :
                     "border-blue-300"
                 }
-            border-8 rounded-xl flex flex-col py-10 gap-10 h-80 w-1/3
+            border-8 rounded-xl flex flex-col py-10 gap-10 md:h-80 md:w-1/3
             `}
         >
             <h3
@@ -28,7 +28,7 @@ const ColoredCards = ({ title, description, color }: ColoredCardsProps) => {
                         color == "purple" ? "text-violet-500" :
                         "text-blue-300"
                     }
-                    text-4xl px-10 font-bold
+                    text-4xl md:px-10 font-bold text-center md:text-left
                 `}
             >{title}</h3>
             <p className="text-2xl px-10">{description}</p>

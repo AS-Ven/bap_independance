@@ -13,10 +13,10 @@ interface TitleProps {
 const Title = ({ title, description, color }: TitleProps) => {
     return (
         <div className="bg-orange-100">
-            <div className="py-20 px-12 gap-10 flex flex-col ">
-                <p className="text-2xl w-2/3 font-bold text-gray-500">BIENVENUE À LA MAISON DES PART&apos;ÂGES</p>
-                <h1 className={`${fontOlivier.className} text-7xl w-2/3`}>{title}</h1>
-                <div className="w-1/2 flex flex-col items-center gap-20">
+            <div className="py-20 md:px-12 gap-10 flex flex-col ">
+                <p className="text-2xl md:w-2/3 font-bold text-gray-500">BIENVENUE À LA MAISON DES PART&apos;ÂGES</p>
+                <h1 className={`${fontOlivier.className} text-7xl md:w-2/3`}>{title}</h1>
+                <div className="md:w-1/2 flex flex-col items-center gap-20">
                     <p className="text-xl">{description}</p>
                     <DownloadBtn color={color}></DownloadBtn>
                 </div>
