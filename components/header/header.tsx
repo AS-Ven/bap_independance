@@ -2,9 +2,9 @@ import Logo from "../../assets/logo-paysage.svg"
 import Image from 'next/image'
 import PageLink from "./link/page-link";
 import BurgerLink from "./link/burger-link";
-import social_icon from "@/assets/icons/social_icon.png"
-import school_icon from "@/assets/icons/school_icon.png"
-import auto_icon from "@/assets/icons/auto_icon.png"
+import social_icon from "@/assets/social_icon.png"
+import school_icon from "@/assets/school_icon.png"
+import auto_icon from "@/assets/auto_icon.png"
 
 const Header = () => {
 
