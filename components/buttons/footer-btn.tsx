@@ -7,7 +7,7 @@ interface FooterBtnProps {
 
 const FooterBtn = ({ color }: FooterBtnProps) => {
     return (
-        <Link href="/">
+        <Link href="/contact">
             <button className={`
                 ${
                     color == "orange" ? "bg-orange-500" :
