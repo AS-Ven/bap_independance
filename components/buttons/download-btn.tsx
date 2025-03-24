@@ -8,7 +8,8 @@ interface DownloadBtnProps {
 const DownloadBtn = ({ color }: DownloadBtnProps) => {
     return (
         <Link
-            href="/"
+            href='/guide_bap.pdf'
+            download
             className={`
                 ${
                     color == "orange" ? "bg-orange-500" :

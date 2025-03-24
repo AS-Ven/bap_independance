@@ -42,7 +42,7 @@ const Header = () => {
                 urls={pagesUrls}
             ></BurgerLink>
             <PageLink
-                url="/"
+                url="http://localhost:3000/login"
                 text="Forum"
             ></PageLink>
             <PageLink
