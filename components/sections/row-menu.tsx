@@ -10,18 +10,21 @@ interface RowMenuProps {
 
 const RowMenu = ({ color }: RowMenuProps) => {
 
-    const RowMenuList: { text: string; color: color }[] = [
+    const RowMenuList: { text: string; color: color; link: string }[] = [
         {
             text: "Réseaux Sociaux",
-            color: "orange"
+            color: "orange",
+            link: "/reseaux"
         },
         {
             text: "Scolarité",
-            color: "blue"
+            color: "blue",
+            link: "/education"
         },
         {
             text: "Autonomie",
-            color: "purple"
+            color: "purple",
+            link: "/autonomie"
         }
     ]
     return (
@@ -54,6 +57,7 @@ const RowMenu = ({ color }: RowMenuProps) => {
                             text={section.text}
                             color={section.color}
                             key={index}
+                            link={section.link}
                         ></RowMenuCards>
                     )
                 }

@@ -4,6 +4,7 @@ import Image from "next/image";
 import phone from "@/assets/phone.png"
 import book from "@/assets/book.webp"
 import cog from "@/assets/cog.png"
+import Link from "next/link";
 
 const fontLilitaOne = localFont({ src: '../../assets/fonts/LilitaOne-Regular.ttf' })
 
@@ -11,11 +12,14 @@ const fontLilitaOne = localFont({ src: '../../assets/fonts/LilitaOne-Regular.ttf
 interface RowMenuCardsProps {
     color: color
     text: string
+    link: string
 }
 
-const RowMenuCards = ({ color, text }: RowMenuCardsProps) => {
+const RowMenuCards = ({ color, text, link }: RowMenuCardsProps) => {
     return (
-        <div className={`
+        <Link 
+            href={link}
+            className={`
             ${
             color == "orange" ? "border-orange-500" :
             color == "red" ? "border-rose-900" :
@@ -44,7 +48,7 @@ const RowMenuCards = ({ color, text }: RowMenuCardsProps) => {
                 }
                 text-white text-3xl md:mx-32 md:w-72 text-center p-2 rounded-2xl`
             }>{text}</h3>
-        </div>
+        </Link>
     );
 }
  
