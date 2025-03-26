@@ -13,7 +13,7 @@ interface FooterProps {
 
 const Footer = ({color}: FooterProps) => {
     return (
-        <footer className="flex justify-center items-center">
+        <footer className="flex justify-center items-center px-8 md:p-0">
             <div className="flex">
                 <div className="flex-col justify-evenly items-center px-32 hidden md:flex">
                     <Image

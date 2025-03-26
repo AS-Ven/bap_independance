@@ -21,8 +21,8 @@ const Title = ({ title, description, color, image }: TitleProps) => {
     return (
         <div className="bg-orange-100 py-20 relative flex justify-evenly items-center">
             <div className="px-12 gap-10 flex flex-col">
-                <p className="text-2xl md:w-2/3 font-bold text-gray-500">BIENVENUE À LA MAISON DES PART&apos;ÂGES</p>
-                <h1 className={`${fontOlivier.className} ${image != titleImg ? "" : "md:w-2/3"} text-7xl`}>{title}</h1>
+                <p className="md:text-2xl text-xl md:w-2/3 font-bold text-gray-500">BIENVENUE À LA MAISON DES PART&apos;ÂGES</p>
+                <h1 className={`${fontOlivier.className} ${image != titleImg ? "" : "md:w-2/3"} md:text-7xl text-4xl`}>{title}</h1>
                 <div className="md:w-1/2 flex flex-col items-center gap-20">
                     <p className="text-xl">{description}</p>
                     <DownloadBtn color={color}></DownloadBtn>

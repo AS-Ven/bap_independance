@@ -6,9 +6,9 @@ import { Mail, PhoneCall } from "lucide-react";
 const Contact = () => {
     return (
         <div className="flex justify-between items-center px-20 py-24">
-            <div className="flex flex-col w-1/2">
+            <div className="flex flex-col md:w-1/2">
                 <FormContact></FormContact>
-                <div className="flex justify-between pt-12">
+                <div className="flex justify-between flex-wrap pt-12">
                     <div className="flex justify-center items-center gap-4">
                         <PhoneCall size={28}></PhoneCall>
                         <div className="text-xl">
@@ -28,6 +28,7 @@ const Contact = () => {
             <Image
                 src={Location}
                 alt="location"
+                className="hidden md:flex"
             ></Image>
         </div>
     );

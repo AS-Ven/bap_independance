@@ -22,14 +22,14 @@ const RowMenu = ({ color }: RowMenuProps) => {
             link: "/education"
         },
         {
-            text: "Autonomie",
+            text: "Responsabilités",
             color: "purple",
             link: "/autonomie"
         }
     ]
     return (
         <div className="flex flex-col justify-center items-center py-24">
-            <h2 className={`${fontOlivier.className} md:text-7xl text-5xl md:w-2/3 md:px-10 text-center`}>
+            <h2 className={`${fontOlivier.className} md:text-7xl text-4xl md:w-2/3 md:px-10 text-center`}>
                     Accompagner votre
                     <span className={`
                         ${
